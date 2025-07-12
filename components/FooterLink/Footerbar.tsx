@@ -5,10 +5,10 @@ import {
   faUsersRectangle,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Image from "next/image";
 import { ContactIcon } from "../Contacted/ContactIcon";
 
-import { faLine } from "@fortawesome/free-brands-svg-icons";
+// import Image from "next/image";
+// import { faLine } from "@fortawesome/free-brands-svg-icons";
 
 const Footerbar = () => {
   return (
