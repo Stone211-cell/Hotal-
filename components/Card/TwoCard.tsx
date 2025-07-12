@@ -260,11 +260,13 @@ export const TwoCardPriceRoom = ({title,price}:priceroomlist) => {
                {title}
             </h2>
             <span className="block mb-4  text-right text-gray-400">
-               {price}
+               {price}  <br />
+               Monthly 20,000฿ Weekly 10,000 ฿ Daily  1800 ฿
+
             </span>
             <p className="text-lg  text-red-900">ทางเรามีบริการ ให้ทุกห้อง!!</p>
 
-            <p>Microwave ไมโครเวฟ</p>
+
             <p>น้ํา 200฿ ต่อหน่วย</p>
             <p>ไฟฟ้า 10฿ ต่อหน่วย</p>
           </div>
@@ -286,7 +288,8 @@ export const TwoCardPriceRoom = ({title,price}:priceroomlist) => {
                {title}
             </h2>
             <span className="block mb-4  text-right text-gray-400">
-              {price}
+              {price} <br />
+               Monthly 20,000฿ Weekly 10,000 ฿ Daily  1800 ฿
             </span>
             <p className="text-lg  text-red-600">ทางเรามีบริการ ให้ทุกห้อง!!</p>
             <p>Free wifi</p>
@@ -319,11 +322,12 @@ export const TwoCardPriceSeaRoom = ({title,price}:priceroomlist) => {
                {title}
             </h2>
             <span className="block mb-4  text-right text-gray-400">
-               {price}
+               {price}  <br />
+                Monthly 25,000฿ Weekly 12,000฿ Daily  2400 ฿
             </span>
             <p className="text-lg  text-red-900">ทางเรามีบริการ ให้ทุกห้อง!!</p>
 
-            <p>Microwave ไมโครเวฟ</p>
+           
             <p>น้ํา 200฿ ต่อหน่วย</p>
             <p>ไฟฟ้า 10฿ ต่อหน่วย</p>
           </div>
@@ -345,15 +349,11 @@ export const TwoCardPriceSeaRoom = ({title,price}:priceroomlist) => {
                {title}
             </h2>
             <span className="block mb-4  text-right text-gray-400">
-              {price}
+              {price}  <br />
+                Monthly 25,000฿ Weekly 12,000฿ Daily  2400 ฿
             </span>
             <p className="text-lg  text-red-600">ทางเรามีบริการ ให้ทุกห้อง!!</p>
-            <p>Free wifi</p>
-            <p>Parking ที่จอดรถ</p>
-            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
-            <p>Kitchen มีห้องครัวทุกห้อง</p>
-            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
-            <p>Smart TV สมาร์ททีวี</p>
+
         <p>น้ํา 200฿ ต่อหน่วย</p>
             <p>ไฟฟ้า 10฿ ต่อหน่วย</p>
           </div>

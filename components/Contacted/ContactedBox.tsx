@@ -2,8 +2,7 @@ import { ContactIcon } from "./ContactIcon";
 
 import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
-  faFacebook,
-  faFacebookMessenger,
+
   faLine,
 } from "@fortawesome/free-brands-svg-icons";
 
