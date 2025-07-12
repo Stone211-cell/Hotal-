@@ -8,9 +8,8 @@ import {
   MotionValue,
 } from "motion/react";
 import { useState } from "react";
-import { Button } from "./button"; 
+import { Button } from "./button";
 import Image from "next/image";
-
 
 export const HeroParallax = ({
   products,
@@ -76,7 +75,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.link}
             />
           ))}
         </motion.div>
@@ -85,7 +84,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateXReverse}
-              key={product.title}
+              key={product.link}
             />
           ))}
         </motion.div>
@@ -94,7 +93,7 @@ export const HeroParallax = ({
             <ProductCard
               product={product}
               translate={translateX}
-              key={product.title}
+              key={product.link}
             />
           ))}
         </motion.div>
@@ -104,7 +103,7 @@ export const HeroParallax = ({
 };
 
 export const Header = () => {
-    const [isExpanded, setIsExpanded] = useState(false); // ใช้ state สำหรับการแสดงผล
+  const [isExpanded, setIsExpanded] = useState(false); // ใช้ state สำหรับการแสดงผล
 
   const toggleText = () => {
     setIsExpanded(!isExpanded); // สลับการแสดงข้อความ
@@ -113,12 +112,12 @@ export const Header = () => {
     <div className="max-w-7xl relative mx-auto md:pt-20 px-4 w-full  left-0 top-0">
       <div>
         <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-          The Ultimate <br /> development studio
+          Sunsea View Residence <br /> Kohtao
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-          We build beautiful products with the latest technologies and
-          frameworks. We are a team of passionate developers and designers that
-          love to build amazing products.
+          ซันซีวิวเรสซิเดนซ์ เกาะเต่า พักผ่อนอย่างสบายใจในเมืองสุราษฎร์ธานี
+          กับที่พักบรรยากาศดีและเป็นกันเอง ใกล้ร้านอาหาร ร้านกาแฟ ทะเล
+          และเดินทางต่อไปเกาะสมุยหรือเขื่อนเชี่ยวหลานได้ง่าย
         </p>
       </div>
 
@@ -131,26 +130,31 @@ export const Header = () => {
             สัมผัสความสะดวกสบายอันทันสมัยที่โรงแรมของเราในตัวเมืองกรุงเทพ
           </h2>
           <p className="text-sm text-center font-bold mb-5 ">
-            หลีกหนีสู่สถานที่ให้ความสุขอันเงียบสงบใจกลางย่านสุราษฎร์ธานีที่ Sunsea View Residence Kohtao
+            หลีกหนีสู่สถานที่ให้ความสุขอันเงียบสงบใจกลางย่านสุราษฎร์ธานีที่
+            Sunsea View Residence Kohtao
             โรงแรมของเราในใจกลางเมืองสุราษฎร์ธานีเหมาะสำหรับทั้งธุรกิจหรือการพักผ่อน
-           
-          {isExpanded && (
-          <span>
-             โดยให้ทั้งความสบายและความสะดวก โรงแรมของเราในย่านสุราษฎร์ธานี
-            ตั้งอยู่ใกล้แหล่งท่องเที่ยวในตัวเมืองและสามารถเดินทางไปยังสถานที่ต่างๆได้ง่ายๆ
-            ผ่อนคลายที่สระว่ายน้ำและบริการ พักผ่อนหลังจากวันทำงานที่วุ่นวายหรือสำรวจธรรมชาติเมืองสุราษฎร์ธานี
-            ลิ้มรสอาหารชั้นเลิศในตัวเมืองสุราษฎร์ธานี ซึ่งมีให้เลือกทั้งอาหารจีน ญี่ปุ่น และไทย
-            จัดกิจกรรมองค์กรที่น่าประทับใจที่โรงแรมของเราในตัวเมืองกรุงเทพ
-            โดยมีพื้นที่รองรับผู้เข้าร่วมงานได้ถึง 1,500 คน
-            พักผ่อนในห้องพักหรือห้องสวีทที่กว้างขวางซึ่งผสมผสานอิทธิพลไทยแบบดั้งเดิมกับกลิ่นอายความทันสมัย
-            ที่พักหลายแห่งให้วิวเส้นขอบฟ้าของใจกลางเมืองอันน่าทึ่ง
-            สัมผัสประสบการณ์ที่ดีที่สุดของกรุงเทพได้ที่โรงแรมของเราในใจกลางเมืองย่านสุราษฎร์ธานี
-          </span>
-        )}
-      <Button className=" transition-transform duration-200 ease-in-out hover:scale-110  hover:text-shadow-red-500 rounded-sm" onClick={toggleText}>
-        {isExpanded ? "ลดน้อยลง" : "...อ่านเพิ่มเติม"}
-      </Button>
-          </p>    
+            {isExpanded && (
+              <span>
+                โดยให้ทั้งความสบายและความสะดวก โรงแรมของเราในย่านสุราษฎร์ธานี
+                ตั้งอยู่ใกล้แหล่งท่องเที่ยวในตัวเมืองและสามารถเดินทางไปยังสถานที่ต่างๆได้ง่ายๆ
+                ผ่อนคลายที่สระว่ายน้ำและบริการ
+                พักผ่อนหลังจากวันทำงานที่วุ่นวายหรือสำรวจธรรมชาติเมืองสุราษฎร์ธานี
+                ลิ้มรสอาหารชั้นเลิศในตัวเมืองสุราษฎร์ธานี
+                ซึ่งมีให้เลือกทั้งอาหารจีน ญี่ปุ่น และไทย
+                จัดกิจกรรมองค์กรที่น่าประทับใจที่โรงแรมของเราในตัวเมืองกรุงเทพ
+                โดยมีพื้นที่รองรับผู้เข้าร่วมงานได้ถึง 1,500 คน
+                พักผ่อนในห้องพักหรือห้องสวีทที่กว้างขวางซึ่งผสมผสานอิทธิพลไทยแบบดั้งเดิมกับกลิ่นอายความทันสมัย
+                ที่พักหลายแห่งให้วิวเส้นขอบฟ้าของใจกลางเมืองอันน่าทึ่ง
+                สัมผัสประสบการณ์ที่ดีที่สุดของกรุงเทพได้ที่โรงแรมของเราในใจกลางเมืองย่านสุราษฎร์ธานี
+              </span>
+            )}
+            <Button
+              className=" transition-transform duration-200 ease-in-out hover:scale-110  hover:text-shadow-red-500 rounded-sm"
+              onClick={toggleText}
+            >
+              {isExpanded ? "ลดน้อยลง" : "...อ่านเพิ่มเติม"}
+            </Button>
+          </p>
         </div>
       </div>
     </div>
@@ -176,8 +180,8 @@ export const ProductCard = ({
       whileHover={{
         y: -20,
       }}
-      key={product.title}
-      className="group/product h-96 w-[30rem] relative shrink-0"
+      key={product.link}
+      className="group/product h-76 w-[30rem] relative shrink-0"
     >
       <a href={product.link} className="block group-hover/product:shadow-2xl ">
         <Image

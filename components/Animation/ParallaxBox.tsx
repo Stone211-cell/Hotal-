@@ -7,96 +7,72 @@ export function ParallaxBox() {
 }
 export const products = [
   {
-    title: "Moonbeam",
+    title: "Sunsea View Residence",
     link: "https://gomoonbeam.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/moonbeam.png",
   },
   {
-    title: "Cursor",
+    title: "Sunsea View Residence",
     link: "https://cursor.so",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/cursor.png",
   },
   {
-    title: "Rogue",
+    title: "Sunsea View Residence",
     link: "https://userogue.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/rogue.png",
   },
 
   {
-    title: "Editorially",
+    title: "Sunsea View Residence",
     link: "https://editorially.org",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editorially.png",
   },
   {
-    title: "Editrix AI",
+    title: "Sunsea View Residence",
     link: "https://editrix.ai",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
   },
   {
-    title: "Pixel Perfect",
+    title: "Sunsea View Residence",
     link: "https://app.pixelperfect.quest",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
   },
 
   {
-    title: "Algochurn",
+    title: "Sunsea View Residence",
     link: "https://algochurn.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
   },
   {
-    title: "Aceternity UI",
+    title: "Sunsea View Residence",
     link: "https://ui.aceternity.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
   },
   {
-    title: "Tailwind Master Kit",
+    title: "Sunsea View Residence",
     link: "https://tailwindmasterkit.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
   },
   {
-    title: "SmartBridge",
+    title: "Sunsea View Residence",
     link: "https://smartbridgetech.com",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
   },
   {
-    title: "Renderwork Studio",
+    title: "Sunsea View Residence",
     link: "https://renderwork.studio",
     thumbnail:
       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
   },
 
-  {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-  },
-  {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-  },
-  {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-  },
-  {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
-    thumbnail:
-      "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-  },
 ];

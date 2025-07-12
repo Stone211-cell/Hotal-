@@ -9,10 +9,12 @@ const Mapcontactdetail = () => {
     <div>
       <div className="relative bg-black rounded-xl overflow-hidden">
         {/* Neon Red Glow */}
-        <div className="absolute inset-0 rounded-xl
+        <div
+          className="absolute inset-0 rounded-xl
           shadow-[0_0_30px_5px_rgba(255,0,0,0.8),0_0_60px_10px_rgba(255,0,0,0.6)]
           pointer-events-none 
-        "></div>
+        "
+        ></div>
 
         {/* Background Image with Blur */}
         <Image
@@ -31,9 +33,15 @@ const Mapcontactdetail = () => {
           </div>
 
           <div className="my-5">
-            <h3 className="text-5xl font-bold py-5">โรงแรมของเราในย่านสุราษฎร์ธานี</h3>
+            <h3 className="text-5xl font-bold py-5">
+              โรงแรมย่านสุราษฎร์ธานี Sunsea View
+              Residence Kohtao
+            </h3>
             <p className="mt-2 text-sm">
-              โรงแรมของเราในย่านสุราษฎร์ธานี...........
+              โรงแรมของเราในย่านสุราษฎร์ธานี
+              เราพร้อมให้บริการสิ่งอำนวยความสะดวกครบครัน
+              เพื่อให้คุณพักผ่อนได้อย่างสะดวกสบาย ตลอดการเข้าพักที่ Sunsea View
+              Residence Kohtao
             </p>
           </div>
 
@@ -48,7 +56,10 @@ const Mapcontactdetail = () => {
             </h2>
           </div>
 
-          <div id="map" className="my-5 text-center flex flex-col items-center justify-center">
+          <div
+            id="map"
+            className="my-5 text-center flex flex-col items-center justify-center"
+          >
             <ContactIcon
               sizeicon="2x"
               coloricon="red"
@@ -58,7 +69,7 @@ const Mapcontactdetail = () => {
               classtype=""
             />
             <p className="max-w-md mt-2">
-              ............... กรุงเทพมหานคร 10220 ประเทศไทย
+              21 อำเภอเกาะพะงัน สุราษฎร์ธานี 84360 ประเทศไทย 4R4F+WH ตำบล เกาะเต่า อำเภอเกาะพะงัน สุราษฎร์ธานี
             </p>
           </div>
 
@@ -67,18 +78,18 @@ const Mapcontactdetail = () => {
               <ContactIcon
                 sizeicon="2x"
                 coloricon="red"
-                msg="โทรศัพท์สอบถาม"
-                description="09999999"
-                LINKBTN="tel:09999999"
+                msg="โทรสอบถาม"
+                description="097-295-5416"
+                LINKBTN="tel:0972955416"
                 icontype={faPhone}
                 classtype=""
               />
               <ContactIcon
                 sizeicon="2x"
                 coloricon="red"
-                msg="โทรศัพท์สอบถาม"
-                description="099999"
-                LINKBTN="tel:099999"
+                msg="โทรสอบถาม"
+                description="093-578-9499"
+                LINKBTN="tel:093-578-9499"
                 icontype={faPhone}
                 classtype=""
               />
@@ -86,8 +97,8 @@ const Mapcontactdetail = () => {
                 sizeicon="2x"
                 coloricon="red"
                 msg="LINE ID"
-                description="09999"
-                LINKBTN="......"
+                description="097-295-5416"
+                LINKBTN="tel:0972955416"
                 icontype={faLine}
                 classtype=""
               />

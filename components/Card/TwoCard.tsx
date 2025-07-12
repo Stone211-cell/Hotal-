@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CarouselDemo } from "../Animation/CarouselDemo";
+import { CarouselSeaviewroom, CarouselStandardroom } from "../Animation/CarouselDemo";
 
 type cardlist = {
   title: string;
@@ -142,13 +142,13 @@ export const TwoCardCL = () => {
         </div>
 
          <div className="flex-1">
-          <CarouselDemo />
+          <CarouselStandardroom />
         </div>
       </div>
 
       {/* สำหรับมือถือ */}
       <div className="md:hidden w-full space-y-6 px-4">
-        <CarouselDemo />
+        <CarouselStandardroom />
 
         <div
           className="bg-white rounded-xl p-6
@@ -182,7 +182,7 @@ export const TwoCardCR = () => {
       {/* สำหรับ Desktop */}
       <div className="hidden md:flex flex-row items-center space-x-10 max-w-7xl w-full">
         <div className="flex-1">
-          <CarouselDemo />
+          <CarouselSeaviewroom />
         </div>
 
         <div
@@ -210,7 +210,7 @@ export const TwoCardCR = () => {
 
       {/* สำหรับมือถือ */}
       <div className="md:hidden w-full space-y-6 px-4">
-        <CarouselDemo />
+        <CarouselSeaviewroom />
 
         <div
           className="bg-white rounded-xl p-6
@@ -252,7 +252,7 @@ export const TwoCardPriceRoom = ({title,price}:priceroomlist) => {
 
         <div className=" flex flex-row items-center space-x-15 w-full">
                   <div>
-          <CarouselDemo />
+          <CarouselStandardroom />
         </div>
           {/* Text Content */}
           <div className="flex flex-col justify-start items-start mr-25 p-2 w-full">
@@ -276,7 +276,66 @@ export const TwoCardPriceRoom = ({title,price}:priceroomlist) => {
           {/* รูปภาพ */}
           <div className="w-full">
             <div>
-              <CarouselDemo />
+              <CarouselStandardroom />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="flex flex-col justify-start items-start mx-4 w-full">
+            <h2 className="text-xl font-semibold mb-3 text-start">
+               {title}
+            </h2>
+            <span className="block mb-4  text-right text-gray-400">
+              {price}
+            </span>
+            <p className="text-lg  text-red-600">ทางเรามีบริการ ให้ทุกห้อง!!</p>
+            <p>Free wifi</p>
+            <p>Parking ที่จอดรถ</p>
+            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
+            <p>Kitchen มีห้องครัวทุกห้อง</p>
+            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
+            <p>Smart TV สมาร์ททีวี</p>
+        <p>น้ํา 200฿ ต่อหน่วย</p>
+            <p>ไฟฟ้า 10฿ ต่อหน่วย</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const TwoCardPriceSeaRoom = ({title,price}:priceroomlist) => {
+  return (
+    <div className="flex justify-center items-center h-full w-full px-3 md:mx-20">
+      <div className="hidden md:block ">
+
+        <div className=" flex flex-row items-center space-x-15 w-full">
+                  <div>
+          <CarouselSeaviewroom />
+        </div>
+          {/* Text Content */}
+          <div className="flex flex-col justify-start items-start mr-25 p-2 w-full">
+            <h2 className="text-xl font-semibold mb-3 text-start">
+               {title}
+            </h2>
+            <span className="block mb-4  text-right text-gray-400">
+               {price}
+            </span>
+            <p className="text-lg  text-red-900">ทางเรามีบริการ ให้ทุกห้อง!!</p>
+
+            <p>Microwave ไมโครเวฟ</p>
+            <p>น้ํา 200฿ ต่อหน่วย</p>
+            <p>ไฟฟ้า 10฿ ต่อหน่วย</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="block md:hidden w-full">
+        <div className="flex flex-col items-center  w-full">
+          {/* รูปภาพ */}
+          <div className="w-full">
+            <div>
+              <CarouselSeaviewroom />
             </div>
           </div>
 

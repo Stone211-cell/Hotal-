@@ -1,6 +1,6 @@
 import { ContactIcon } from "./ContactIcon";
 
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faFacebookMessenger,
@@ -18,36 +18,24 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
       {" "}
       <div className="  justify-items-center ">
         <div className="grid grid-cols-1 px-5 gap-5  md:grid-cols-2 justify-items-center  ">
-          <ContactIcon
-            pops={pops}
-            sizeicon="2x"
-            coloricon="blue"
-            msg="Messenger"
-            description="ช่างมิล วิศกรการประปา"
-            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
-            icontype={faFacebookMessenger}
-            classtype={classtype}
-          />
+                     <ContactIcon
+                       sizeicon="2x"
+                       coloricon="red"
+                       msg=" เปิดแผนที่นำทาง"
+                       LINKBTN="https://maps.app.goo.gl/HHCnyNu87xprH9Dr7?g_st=ic"
+                       icontype={faLocationDot}
+                       classtype=""
+                     />
 
-          <ContactIcon
-            pops={pops}
-            sizeicon="2x"
-            coloricon="blue"
-            msg="Facebook"
-            description="ช่างมิล วิศกรการประปา"
-            LINKBTN="https://www.facebook.com/share/1SAASdGE8Y/?mibextid=wwXIfr"
-            icontype={faFacebook}
-            classtype={classtype}
-          />
-
+        
           <span className="pr-10 ">
             <ContactIcon
               pops={pops}
               sizeicon="2x"
               coloricon="red"
               msg="โทรสอบถาม"
-              description="064-408-8510"
-              LINKBTN="tel:0644088510"
+              description="097-295-5416"
+              LINKBTN="tel:0972955416"
               icontype={faPhone}
               classtype={classtype}
             />
@@ -58,8 +46,8 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
               sizeicon="2x"
               coloricon="red"
               msg="โทรสอบถาม"
-              description="096-979-2757"
-              LINKBTN="tel:0969792757"
+              description="093-578-9499"
+              LINKBTN="tel:093-578-9499"
               icontype={faPhone}
               classtype={classtype}
             />
@@ -70,8 +58,8 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
               sizeicon="2x"
               coloricon="green"
               msg="LINE ID"
-              description="064-408-8510"
-              LINKBTN="tel:0644088510"
+              description="097-295-5416"
+              LINKBTN="tel:0972955416"
               icontype={faLine}
               classtype={classtype}
             />

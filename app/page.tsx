@@ -9,7 +9,9 @@ import {
   TwoCardPriceRoom,
   TwoCardL,
   TwoCardCR,
+  TwoCardPriceSeaRoom,
 } from "@/components/Card/TwoCard";
+import ContactedBox from "@/components/Contacted/ContactedBox";
 import Mapcontactdetail from "@/components/Mapdetail/Mapcontactdetail";
 
 export default function Home() {
@@ -20,8 +22,10 @@ export default function Home() {
         <ParallaxBox />
       </section>
 
-      <Banner />
-      <section>เปิดมากี่ปี ความน่าเชื่อถือ</section>
+      <section id="service">
+        {" "}
+        <Banner />
+      </section>
 
       <section>
         <TwoCardR
@@ -34,22 +38,29 @@ export default function Home() {
         />
       </section>
 
-      <TwoCardCL />
+      <section>
+        <TwoCardCL />
+        <ContactedBox />
+      </section>
 
       <section>
         <TDBox />
+
+        <ContactedBox />
       </section>
 
       {/* ราคาที่พัก */}
       <section id="aboutus">
         <TwoCardPriceRoom
-          title="ห้องธรรมดา"
-          price="รายสัปดาห์ 10,000 รวมบิล รายวัน 1800 รวมบิล"
+          title="Standard room "
+          price="รายเดือน 20,000 ฿ รายสัปดาห์ 10,000 ฿ รายวัน 1800 ฿"
         />
-        <TwoCardPriceRoom
-          title="ห้องพิเศษ"
-          price="รายสัปดาห์ 10,000 รวมบิล รายวัน 1800 รวมบิล"
+        <TwoCardPriceSeaRoom
+          title=" Sea view room"
+          price="รายเดือน 25,000฿ รายสัปดาห์ 12,000฿ รายวัน 2400 ฿"
         />
+
+        <ContactedBox />
       </section>
 
       <section>
@@ -68,33 +79,39 @@ export default function Home() {
             buttonText="Explore Now"
           />
         </div>
+        <ContactedBox />
       </section>
 
-
-
       {/* zone ข้อดีโรงแรม */}
-      <TwoCardL
-        title="ข้อดีโรงแรม"
-        des="ข้อดีโรงแรม"
-        img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
-      />
-      <TwoCardR
-        title="ข้อดีโรงแรม"
-        des="ข้อดีโรงแรม"
-        img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
-      />
-      <TwoCardCL />
-      <TwoCardR
-        title="ข้อดีโรงแรม"
-        des="ข้อดีโรงแรม"
-        img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
-      />
-      <TwoCardCR />
+      <section>
+        <TwoCardL
+          title="ข้อดีโรงแรม"
+          des="ข้อดีโรงแรม"
+          img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
+        />
+        <TwoCardR
+          title="ข้อดีโรงแรม"
+          des="ข้อดีโรงแรม"
+          img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
+        />
+        <TwoCardCL />
+        <TwoCardR
+          title="ข้อดีโรงแรม"
+          des="ข้อดีโรงแรม"
+          img="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
+        />
+        <TwoCardCR />
+
+        <ContactedBox />
+      </section>
 
       {/* contact zone  */}
 
       {/* google map zone */}
-      <Mapcontactdetail />
+      <section className="my-8">
+        <Mapcontactdetail />
+      </section>
+      <ContactedBox />
     </div>
   );
 }
