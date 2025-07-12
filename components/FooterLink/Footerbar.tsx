@@ -1,22 +1,31 @@
-// import { faHouse, faTruckFast, faUser, faUsersRectangle } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faTruckFast,
+  faUser,
+  faUsersRectangle,
+} from "@fortawesome/free-solid-svg-icons";
 
-// import Image from "next/image";
-// import { ContactIcon } from "../Contacted/ContactIcon";
+import Image from "next/image";
+import { ContactIcon } from "../Contacted/ContactIcon";
 
-// import { faLine } from "@fortawesome/free-brands-svg-icons";
+import { faLine } from "@fortawesome/free-brands-svg-icons";
 
 const Footerbar = () => {
   return (
-    <footer className="bg-gradient-to-b bg-gray-400  w-full p-8 h-[100%]  text-white  ">
+    <footer className="bg-gradient-to-b bg-black  w-full p-8 h-[100%]  text-white  ">
       <div>
         <div>
           <h2 className="text-3xl font-bold text-amber-300"> โรงแรม</h2>
 
-          {/* <div className="my-5 ">
-            <h2 className="text-2xl font-bold">ช่างประปา คุณภาพ</h2>
+          <div className="my-5 ">
+            <h2 className="text-2xl font-bold">
+              {" "}
+              Sunsea View Residence <br /> Kohtao
+            </h2>
             <p className="mt-2 text-sm">
-              รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับติดตั้งที่เก็บน้ำ
-              ทุกประเภท ครบจบในที่เดียว{" "}
+              ซันซีวิวเรสซิเดนซ์ เกาะเต่า พักผ่อนอย่างสบายใจในเมืองสุราษฎร์ธานี
+              กับที่พักบรรยากาศดีและเป็นกันเอง ใกล้ร้านอาหาร ร้านกาแฟ ทะเล
+              และเดินทางต่อไปเกาะสมุยหรือเขื่อนเชี่ยวหลานได้ง่าย
             </p>
           </div>
         </div>
@@ -42,7 +51,7 @@ const Footerbar = () => {
                 sizeicon="lg"
                 coloricon="white"
                 msg="เกี่ยวกับเรา"
-                LINKBTN="/aboutus"
+                LINKBTN="#aboutus"
                 icontype={faUser}
                 classtype=""
               />
@@ -52,9 +61,8 @@ const Footerbar = () => {
                 sizeicon="lg"
                 coloricon="white"
                 msg="การบริการของเรา"
-                LINKBTN="/service"
+                LINKBTN="#service"
                 icontype={faTruckFast}
-                
                 classtype=""
               />
             </span>
@@ -62,17 +70,21 @@ const Footerbar = () => {
               <ContactIcon
                 sizeicon="lg"
                 coloricon="white"
-                msg="ผลงานของเรา"
-                LINKBTN="/performance"
+                msg="ติดต่อเรา"
+                LINKBTN="#Contacted"
                 icontype={faUsersRectangle}
                 classtype=""
               />
             </span>
             <div className="hidden md:block">
-              <h2 className="text-sm font-bold md:text-xl text-amber-300">ช่างประปา คุณภาพ</h2>
+              <h2 className="text-sm font-bold md:text-xl text-amber-300">
+                {" "}
+                สัมผัสความสะดวกสบายอันทันสมัยที่โรงแรมของเราในตัวเมืองกรุงเทพ
+              </h2>
               <p className="mt-2 text-xs">
-                รับซ่อมประปา หาจุดรั่ว เดินท่อประปา รับติดตั้งที่เก็บน้ำ
-                ทุกประเภท ครบจบในที่เดียว
+                หลีกหนีสู่สถานที่ให้ความสุขอันเงียบสงบใจกลางย่านสุราษฎร์ธานีที่
+                Sunsea View Residence Kohtao
+                โรงแรมของเราในใจกลางเมืองสุราษฎร์ธานีเหมาะสำหรับทั้งธุรกิจหรือการพักผ่อน
               </p>
             </div>
           </div>
@@ -97,8 +109,8 @@ const Footerbar = () => {
               classtype=""
             />
           </div>
-          */}
-        </div>  
+          
+        </div>   */}
       </div>
     </footer>
   );

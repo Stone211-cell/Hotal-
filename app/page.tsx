@@ -63,19 +63,21 @@ export default function Home() {
         <ContactedBox />
       </section>
 
-      <section>
-        โปรโมชั่น
-        <div className="flex justify-center items-center mx-5 gap-4">
+
+{/* โปรโฒชั่น */}
+      <section className="my-5">
+
+        <div className="flex justify-center items-center my-8 gap-4">
           <FloatingShadowCard
             imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-            title="โปรโมชั่น"
-            description="Enjoy the beautiful sunset view with amazing colors."
+            title="โปรโมชั่น มีจำนวนจำกัด "
+            description="จ่าย3 เดือนมีส่วนลด5%  Pay for 3 months with 5% discount"
             buttonText="Explore Now"
           />
           <FloatingShadowCard
             imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-            title="โปรโมชั่น"
-            description="Enjoy the beautiful sunset view with amazing colors."
+            title="โปรโมชั่น มีจำนวนจำกัด"
+            description="Pay for 6 months and get 10% discount."
             buttonText="Explore Now"
           />
         </div>
@@ -83,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* zone ข้อดีโรงแรม */}
-      <section>
+      <section id="aboutus">
         <TwoCardL
           title="ข้อดีโรงแรม"
           des="ข้อดีโรงแรม"
@@ -108,10 +110,14 @@ export default function Home() {
       {/* contact zone  */}
 
       {/* google map zone */}
-      <section className="my-8">
+      <section className="my-8" id="Contacted">
         <Mapcontactdetail />
       </section>
+
+      <section className="my-15">
+
       <ContactedBox />
+      </section>
     </div>
   );
 }

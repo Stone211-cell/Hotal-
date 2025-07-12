@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface CardProps {
@@ -39,15 +40,18 @@ export default function FloatingShadowCard({
         <p className="text-gray-600 text-sm mb-5">{description}</p>
 
         {/* ปุ่ม */}
-        <button
+        <Link
           className="px-5 py-2 bg-gradient-to-r from-purple-600 to-indigo-600 
                      text-white rounded-full shadow-md 
                      hover:from-indigo-600 hover:to-purple-600 
                      transition-colors duration-300 ease-in-out
                      active:scale-95 focus:outline-none focus:ring-4 focus:ring-indigo-300"
+                href={"tel:0972955416"}     
+                         target="_blank"
+          rel="noopener noreferrer"
         >
           {buttonText}
-        </button>
+        </Link>
       </div>
 
       {/* เงาขอบซ้ายล่าง (เลียนแบบเงา floating) */}

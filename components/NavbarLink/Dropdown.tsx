@@ -15,9 +15,9 @@ import Link from "next/link";
 
 const Dropdown = () => {
   return (
-      <Menubar className="bg-blue-500 transition-transform duration-200 ease-in-out hover:scale-110 border-amber-300">
+      <Menubar className="bg-red-900 transition-transform duration-200 ease-in-out hover:scale-110 border-amber-300">
         <MenubarMenu >
-          <MenubarTrigger  aria-label="Open menu" className="bg-blue-500 ">
+          <MenubarTrigger  aria-label="Open menu" className="bg-red-900 ">
             <AlignRight  color="white" />
           </MenubarTrigger>
           <MenubarContent className="bg-white">

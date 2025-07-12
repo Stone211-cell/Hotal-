@@ -17,6 +17,8 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
       {" "}
       <div className="  justify-items-center ">
         <div className="grid grid-cols-1 px-5 gap-5  md:grid-cols-2 justify-items-center  ">
+          <span className="pr-10">
+
                      <ContactIcon
                        sizeicon="2x"
                        coloricon="red"
@@ -24,8 +26,9 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
                        LINKBTN="https://maps.app.goo.gl/HHCnyNu87xprH9Dr7?g_st=ic"
                        icontype={faLocationDot}
                        classtype=""
-                     />
+                       />
 
+                       </span>
         
           <span className="pr-10 ">
             <ContactIcon
