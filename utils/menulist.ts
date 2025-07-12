@@ -6,7 +6,7 @@ type MenuItem = {
 
 export const List: MenuItem[] = [
   { href: "/", label: "หน้าหลัก" },
-  { href: "/", label: "เกี่ยวกับเรา" },
+  { href: "#aboutus", label: "เกี่ยวกับเรา" },
   { href: "/", label: "การบริการของเรา" },
   { href: "/", label: "ประวัติการทำงาน" },
   // { href: "/contact", label: "ติดต่อสอบถาม" },

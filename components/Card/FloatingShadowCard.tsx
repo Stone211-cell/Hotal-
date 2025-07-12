@@ -14,21 +14,23 @@ export default function FloatingShadowCard({
   title,
   description,
   buttonText,
-
 }: CardProps) {
   return (
-    <div className="max-w-sm bg-white rounded-xl overflow-hidden relative
+    <div
+      className="max-w-sm bg-white rounded-xl overflow-hidden relative
                     shadow-[10px_10px_15px_rgba(0,0,0,0.1)] 
                     hover:shadow-[15px_15px_25px_rgba(0,0,0,0.15)] 
                     transition-shadow duration-300
-                    border border-gray-200">
+                    border border-gray-200"
+    >
       {/* รูปด้านบน */}
       <Image
         src={imgSrc}
         alt={title}
-        className="w-full h-48 object-cover rounded-t-xl"
+        width={400}
+        height={192} // ประมาณอัตราส่วน 400x192 ~ h-48
+        className="object-cover rounded-t-xl"
         loading="lazy"
-        fill
       />
 
       {/* เนื้อหาใน card */}

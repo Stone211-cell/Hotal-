@@ -124,10 +124,10 @@ export const Header = () => {
 
       <div className="mt-35 flex justify-center justify-self-center item-center ">
         <div className=" flex justify-center item-center text-center flex-col">
-          <p className="text-xl text-center font-bold mb-3 text-red-800">
+          <p className="text-3xl text-center font-bold mb-3 text-red-800">
             ยินดีต้อนรับสู่ Sunsea View Residence Kohtao
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-center py-3">
+          <h2 className="text-xl md:text-3xl font-bold text-center py-3">
             สัมผัสความสะดวกสบายอันทันสมัยที่โรงแรมของเราในตัวเมืองกรุงเทพ
           </h2>
           <p className="text-sm text-center font-bold mb-5 ">

@@ -114,61 +114,62 @@ export const TwoCardL = ({ title, des, img }: cardlist) => {
 
 export const TwoCardCL = () => {
   return (
-    <div className="flex justify-center items-center h-full w-full px-3 md:mx-20">
-      <div className="hidden md:block ">
-        <div className=" flex flex-row items-center space-x-15 w-full">
-          {/* Text Content */}
-          <div className="flex flex-col justify-start items-start mr-25 p-2 w-full">
-            <h2 className="text-xl font-semibold mb-3 text-start">
-              สิ่งอำนวยความสะดวก
-            </h2>
-            <span className="block mb-4  text-right text-gray-400">
-              ที่ Sunsea View Residence Kohtao ที่เดียว
-            </span>
-            <p className="text-lg  text-red-900">ทางเรามีบริการ ให้ทุกห้อง!!</p>
-            <p>Free wifi</p>
-            <p>Parking ที่จอดรถ</p>
-            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
-            <p>Kitchen มีห้องครัวทุกห้อง</p>
-            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
-            <p>Smart TV สมาร์ททีวี</p>
-            <p>Refrigerator ตู้เย็น</p>
-            <p>Microwave ไมโครเวฟ</p>
-          </div>
+    <div className="flex justify-center items-center w-full px-3 md:px-20 py-10 bg-gray-50">
+      {/* สำหรับ Desktop */}
+      <div className="hidden md:flex flex-row items-center space-x-10 max-w-7xl w-full">
+       
 
-          <div>
-            <CarouselDemo />
-          </div>
+        <div
+          className="flex-1 bg-white rounded-xl p-6
+                     shadow-[ -8px_8px_20px_rgba(0,0,0,0.15), -15px_15px_30px_rgba(0,0,0,0.1)]
+                     border border-gray-300 max-w-md"
+        >
+          <h2 className="text-2xl font-bold mb-3 text-center text-gray-800">จุดเด่น</h2>
+          <span className="block mb-4 text-gray-500 text-center">
+            ที่ Sunsea View Residence Kohtao ที่เดียว
+          </span>
+          <ul className="text-gray-700 space-y-1 pl-4 list-disc">
+            <li className="text-red-700 font-semibold">บริการให้ทุกห้อง!!</li>
+            <li>Free wifi</li>
+            <li>Parking ที่จอดรถ</li>
+            <li>Air Conditioner เครื่องปรับอากาศ</li>
+            <li>Kitchen มีห้องครัว</li>
+            <li>Hot water เครื่องทำน้ำอุ่น</li>
+            <li>Smart TV สมาร์ททีวี</li>
+            <li>Refrigerator ตู้เย็น</li>
+            <li>Microwave ไมโครเวฟ</li>
+          </ul>
+        </div>
+
+         <div className="flex-1">
+          <CarouselDemo />
         </div>
       </div>
 
-      <div className="block md:hidden w-full">
-        <div className="flex flex-col items-center  w-full">
-          {/* รูปภาพ */}
-          <div className="w-full">
-            <div>
-              <CarouselDemo />
-            </div>
-          </div>
+      {/* สำหรับมือถือ */}
+      <div className="md:hidden w-full space-y-6 px-4">
+        <CarouselDemo />
 
-          {/* Text Content */}
-          <div className="flex flex-col justify-start items-start px-5 p-2 w-1/2">
-            <h2 className="text-xl font-semibold mb-3 text-start">
-              สิ่งอำนวยความสะดวก
-            </h2>
-            <span className="block mb-4  text-right text-gray-400">
-              ที่ Sunsea View Residence Kohtao ที่เดียว
-            </span>
-            <p className="text-lg  text-red-600">ทางเรามีบริการ ให้ทุกห้อง!!</p>
-            <p>Free wifi</p>
-            <p>Parking ที่จอดรถ</p>
-            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
-            <p>Kitchen มีห้องครัวทุกห้อง</p>
-            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
-            <p>Smart TV สมาร์ททีวี</p>
-            <p>Refrigerator ตู้เย็น</p>
-            <p>Microwave ไมโครเวฟ</p>
-          </div>
+        <div
+          className="bg-white rounded-xl p-6
+                     shadow-[ -8px_8px_20px_rgba(0,0,0,0.15), -15px_15px_30px_rgba(0,0,0,0.1)]
+                     border border-gray-300"
+        >
+          <h2 className="text-2xl font-bold mb-3 text-center text-gray-800">จุดเด่น</h2>
+          <span className="block mb-4 text-gray-500 text-center">
+            ที่ Sunsea View Residence Kohtao ที่เดียว
+          </span>
+          <ul className="text-gray-700 space-y-1 pl-4 list-disc">
+            <li className="text-red-700 font-semibold">บริการให้ทุกห้อง!!</li>
+            <li>Free wifi</li>
+            <li>Parking ที่จอดรถ</li>
+            <li>Air Conditioner เครื่องปรับอากาศ</li>
+            <li>Kitchen มีห้องครัว</li>
+            <li>Hot water เครื่องทำน้ำอุ่น</li>
+            <li>Smart TV สมาร์ททีวี</li>
+            <li>Refrigerator ตู้เย็น</li>
+            <li>Microwave ไมโครเวฟ</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -177,65 +178,67 @@ export const TwoCardCL = () => {
 
 export const TwoCardCR = () => {
   return (
-    <div className="flex justify-center items-center h-full w-full px-3 md:mx-20">
-      <div className="hidden md:block ">
-        <div className=" flex flex-row items-center space-x-15 w-full">
-        <div>
+    <div className="flex justify-center items-center w-full px-3 md:px-20 py-10 bg-gray-50">
+      {/* สำหรับ Desktop */}
+      <div className="hidden md:flex flex-row items-center space-x-10 max-w-7xl w-full">
+        <div className="flex-1">
           <CarouselDemo />
         </div>
-          {/* Text Content */}
-          <div className="flex flex-col justify-start items-start mr-25 p-2 w-full">
-            <h2 className="text-xl font-semibold mb-3 text-start">
-              สิ่งอำนวยความสะดวก
-            </h2>
-            <span className="block mb-4  text-right text-gray-400">
-              ที่ Sunsea View Residence Kohtao ที่เดียว
-            </span>
-            <p className="text-lg  text-red-900">ทางเรามีบริการ ให้ทุกห้อง!!</p>
-            <p>Free wifi</p>
-            <p>Parking ที่จอดรถ</p>
-            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
-            <p>Kitchen มีห้องครัวทุกห้อง</p>
-            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
-            <p>Smart TV สมาร์ททีวี</p>
-            <p>Refrigerator ตู้เย็น</p>
-            <p>Microwave ไมโครเวฟ</p>
-          </div>
+
+        <div
+          className="flex-1 bg-white rounded-xl p-6
+                     shadow-[ -8px_8px_20px_rgba(0,0,0,0.15), -15px_15px_30px_rgba(0,0,0,0.1)]
+                     border border-gray-300 max-w-md"
+        >
+          <h2 className="text-2xl font-bold mb-3 text-center text-gray-800">จุดเด่น</h2>
+          <span className="block mb-4 text-gray-500 text-center">
+            ที่ Sunsea View Residence Kohtao ที่เดียว
+          </span>
+          <ul className="text-gray-700 space-y-1 pl-4 list-disc">
+            <li className="text-red-700 font-semibold">บริการให้ทุกห้อง!!</li>
+            <li>Free wifi</li>
+            <li>Parking ที่จอดรถ</li>
+            <li>Air Conditioner เครื่องปรับอากาศ</li>
+            <li>Kitchen มีห้องครัว</li>
+            <li>Hot water เครื่องทำน้ำอุ่น</li>
+            <li>Smart TV สมาร์ททีวี</li>
+            <li>Refrigerator ตู้เย็น</li>
+            <li>Microwave ไมโครเวฟ</li>
+          </ul>
         </div>
       </div>
 
-      <div className="block md:hidden w-full">
-        <div className="flex flex-col items-center  w-full">
-          {/* รูปภาพ */}
-          <div className="w-full">
-            <div>
-              <CarouselDemo />
-            </div>
-          </div>
+      {/* สำหรับมือถือ */}
+      <div className="md:hidden w-full space-y-6 px-4">
+        <CarouselDemo />
 
-          {/* Text Content */}
-          <div className="flex flex-col justify-start items-start px-5 p-2 w-1/2">
-            <h2 className="text-xl font-semibold mb-3 text-start">
-              สิ่งอำนวยความสะดวก
-            </h2>
-            <span className="block mb-4  text-right text-gray-400">
-              ที่ Sunsea View Residence Kohtao ที่เดียว
-            </span>
-            <p className="text-lg  text-red-600">ทางเรามีบริการ ให้ทุกห้อง!!</p>
-            <p>Free wifi</p>
-            <p>Parking ที่จอดรถ</p>
-            <p>Air Conditioner เครื่องปรับอากาศทุกห้อง</p>
-            <p>Kitchen มีห้องครัวทุกห้อง</p>
-            <p>Hot water มีเครื่องทำน้ำอุ่นทุกห้อง</p>
-            <p>Smart TV สมาร์ททีวี</p>
-            <p>Refrigerator ตู้เย็น</p>
-            <p>Microwave ไมโครเวฟ</p>
-          </div>
+        <div
+          className="bg-white rounded-xl p-6
+                     shadow-[ -8px_8px_20px_rgba(0,0,0,0.15), -15px_15px_30px_rgba(0,0,0,0.1)]
+                     border border-gray-300"
+        >
+          <h2 className="text-2xl font-bold mb-3 text-center text-gray-800">จุดเด่น</h2>
+          <span className="block mb-4 text-gray-500 text-center">
+            ที่ Sunsea View Residence Kohtao ที่เดียว
+          </span>
+          <ul className="text-gray-700 space-y-1 pl-4 list-disc">
+            <li className="text-red-700 font-semibold">บริการให้ทุกห้อง!!</li>
+            <li>Free wifi</li>
+            <li>Parking ที่จอดรถ</li>
+            <li>Air Conditioner เครื่องปรับอากาศ</li>
+            <li>Kitchen มีห้องครัว</li>
+            <li>Hot water เครื่องทำน้ำอุ่น</li>
+            <li>Smart TV สมาร์ททีวี</li>
+            <li>Refrigerator ตู้เย็น</li>
+            <li>Microwave ไมโครเวฟ</li>
+          </ul>
         </div>
       </div>
     </div>
   );
 };
+
+
 
 type priceroomlist = {
   title: string;
@@ -278,7 +281,7 @@ export const TwoCardPriceRoom = ({title,price}:priceroomlist) => {
           </div>
 
           {/* Text Content */}
-          <div className="flex flex-col justify-start items-start px-5 p-2 w-1/2">
+          <div className="flex flex-col justify-start items-start mx-4 w-full">
             <h2 className="text-xl font-semibold mb-3 text-start">
                {title}
             </h2>
