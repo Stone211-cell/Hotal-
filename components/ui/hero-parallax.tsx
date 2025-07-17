@@ -58,7 +58,7 @@ export const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[350vh] pt-10 overflow-hidden bg-gray-200  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[240vh] md:h-[300vh] pt-10 overflow-hidden bg-gray-200  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
       <Header />
       <motion.div
@@ -98,16 +98,13 @@ export const HeroParallax = ({
           ))}
         </motion.div>
       </motion.div>
+      <Footter />
     </div>
   );
 };
 
 export const Header = () => {
-  const [isExpanded, setIsExpanded] = useState(false); // ใช้ state สำหรับการแสดงผล
-
-  const toggleText = () => {
-    setIsExpanded(!isExpanded); // สลับการแสดงข้อความ
-  };
+  
   return (
     <div className="max-w-7xl relative mx-auto md:pt-20 px-4 w-full  left-0 top-0">
       <div>
@@ -120,6 +117,18 @@ export const Header = () => {
           และเดินทางต่อไปเกาะสมุยหรือเขื่อนเชี่ยวหลานได้ง่าย
         </p>
       </div>
+    </div>
+  );
+};
+
+export const Footter = () => {
+  const [isExpanded, setIsExpanded] = useState(false); // ใช้ state สำหรับการแสดงผล
+
+  const toggleText = () => {
+    setIsExpanded(!isExpanded); // สลับการแสดงข้อความ
+  };
+  return (
+    <div className="max-w-7xl relative mx-auto md:pt-20 px-4 w-full  left-0 top-0">
 
       <div className="mt-35 flex justify-center justify-self-center item-center ">
         <div className=" flex justify-center item-center text-center flex-col">

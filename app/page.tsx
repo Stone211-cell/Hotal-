@@ -59,13 +59,15 @@ export default function Home() {
           title=" Sea view room"
           price="รายเดือน 25,000฿ รายสัปดาห์ 12,000฿ รายวัน 2400 ฿"
         />
+        <div className="mt-7">
 
         <ContactedBox />
+        </div>
       </section>
 
 
 {/* โปรโฒชั่น */}
-      <section className="my-5">
+      <section className="my-5" id="promotion">
 
         <div className="flex justify-center items-center my-8 gap-4">
           <FloatingShadowCard
