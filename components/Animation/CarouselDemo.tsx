@@ -6,22 +6,23 @@ export function CarouselStandardroom() {
  {
       title: "Sea Room1",
 
-      src: "/image/Roomprice/Standard/L301/LINE_ALBUM_L301. เดือนละ20,000_250712_1.jpg",
+      src: "/image/Roomprice/Standard/L301/S__19497161_0.jpg", 
     },
+
  {
       title: "Sea Room2",
 
-      src: "/image/Roomprice/Standard/L301/LINE_ALBUM_L301. เดือนละ20,000_250712_2.jpg",
+      src: "/image/Roomprice/Standard/L301/S__19497163_0.jpg",
     },
  {
       title: "Sea Room3",
 
-      src: "/image/Roomprice/Standard/L301/LINE_ALBUM_L301. เดือนละ20,000_250712_3.jpg",
+      src: "/image/Roomprice/Standard/L301/S__19497164_0.jpg",
     },
  {
       title: "Sea Room4",
 
-      src: "/image/Roomprice/Standard/L301/LINE_ALBUM_L301. เดือนละ20,000_250712_4.jpg",
+      src: "/image/Roomprice/Standard/L301/S__19497165_0.jpg",
     },
    
   ];
@@ -105,27 +106,17 @@ export function CarouselSeaviewroom() {
     {
       title: "Sea Room1",
 
-      src: "/image/Roomprice/Seaview/L101/LINE_ALBUM_L101. 25000เดือน_250712_1.jpg",
+      src: "/image/Roomprice/Seaview/L101/S__19497167_0.jpg",
     },
     {
       title: "Sea Room2",
 
-      src: "/image/Roomprice/Seaview/L101/LINE_ALBUM_L101. 25000เดือน_250712_2.jpg",
+      src: "/image/Roomprice/Seaview/L101/S__19497169_0.jpg",
     },
     {
       title: "Sea Room3",
 
-      src: "/image/Roomprice/Seaview/L101/LINE_ALBUM_L101. 25000เดือน_250712_3.jpg",
-    },
-    {
-      title: "Sea Room4",
-
-      src: "/image/Roomprice/Seaview/L101/LINE_ALBUM_L101. 25000เดือน_250712_4.jpg",
-    },
-    {
-      title: "Sea Room5",
-
-      src: "/image/Roomprice/Seaview/L101/LINE_ALBUM_L101. 25000เดือน_250712_5.jpg",
+      src: "/image/Roomprice/Seaview/L101/S__19497170_0.jpg",
     },
   ];
   return (

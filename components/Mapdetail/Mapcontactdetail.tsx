@@ -18,14 +18,14 @@ const Mapcontactdetail = () => {
 
         {/* Background Image with Blur */}
         <Image
-          src="/image/Central/bkkqp-lobby-0027_Classic-Hor.jpg"
+          src="/image/Roomprice/Standard/L301/S__19497163_0.jpg"
           alt="ซ่อมประปา"
           className="absolute inset-0 w-full h-full object-cover backdrop-blur-md rounded-xl"
           fill
         />
 
         {/* Content Overlay */}
-        <div className="relative  bg-black  z-10 shadow-[0_0_30px_5px_rgba(255,0,0,0.8),0_0_60px_10px_rgba(255,0,0,0.6) p-8 min-h-[500px] flex flex-col justify-center text-white text-center rounded-xl">
+        <div className="relative  bg-black/60  z-10 shadow-[0_0_30px_5px_rgba(255,0,0,0.8),0_0_60px_10px_rgba(255,0,0,0.6) p-8 min-h-[500px] flex flex-col justify-center text-white text-center rounded-xl">
           <div className="flex justify-center">
             <h2 className="text-2xl font-bold bg-white text-black px-4 py-1 rounded-md transition-transform duration-200 ease-in-out hover:scale-110">
               <Link href="#map">ติดต่อเรา</Link>

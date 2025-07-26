@@ -12,12 +12,12 @@ import { ContactIcon } from "../Contacted/ContactIcon";
 
 const Footerbar = () => {
   return (
-    <footer className="bg-gradient-to-b bg-black  w-full p-8 h-[100%]  text-white  ">
+    <footer className="bg-gradient-to-b w-full p-8 h-[100%] bg-yellow-700  text-white border-1 border-black">
       <div>
         <div>
-          <h2 className="text-3xl font-bold text-amber-300"> โรงแรม</h2>
+          <h2 className="text-3xl font-bold text-white"> โรงแรม</h2>
 
-          <div className="my-5 ">
+          <div className="my-5 text-white">
             <h2 className="text-2xl font-bold">
               {" "}
               Sunsea View Residence <br /> Kohtao
@@ -33,7 +33,7 @@ const Footerbar = () => {
 
       <div className="grid grid-cols-2 text-md">
         <div>
-          <h2 className="mb-3 mx-5">แผนผังเว็บไซต์</h2>
+          <h2 className="mb-3 mx-5 text-white">แผนผังเว็บไซต์</h2>
 
           <div className="flex flex-col gap-y-3 mx-8">
             <span>
@@ -43,7 +43,7 @@ const Footerbar = () => {
                 msg="หน้าหลัก"
                 LINKBTN="/"
                 icontype={faHouse}
-                classtype=""
+                classtype="text-white"
               />
             </span>
             <span>
@@ -53,7 +53,7 @@ const Footerbar = () => {
                 msg="เกี่ยวกับเรา"
                 LINKBTN="#aboutus"
                 icontype={faUser}
-                classtype=""
+                classtype="text-white"
               />
             </span>
             <span>
@@ -63,7 +63,7 @@ const Footerbar = () => {
                 msg="การบริการของเรา"
                 LINKBTN="#service"
                 icontype={faTruckFast}
-                classtype=""
+                classtype="text-white"
               />
             </span>
             <span>
@@ -73,15 +73,15 @@ const Footerbar = () => {
                 msg="ติดต่อเรา"
                 LINKBTN="#Contacted"
                 icontype={faUsersRectangle}
-                classtype=""
+                classtype="text-white"
               />
             </span>
             <div className="hidden md:block">
-              <h2 className="text-sm font-bold md:text-xl text-amber-300">
+              <h2 className="text-sm font-bold md:text-xl text-white">
                 {" "}
                 สัมผัสความสะดวกสบายอันทันสมัยที่โรงแรมของเราในตัวเมืองกรุงเทพ
               </h2>
-              <p className="mt-2 text-xs">
+              <p className="mt-2 text-xs text-white">
                 หลีกหนีสู่สถานที่ให้ความสุขอันเงียบสงบใจกลางย่านสุราษฎร์ธานีที่
                 Sunsea View Residence Kohtao
                 โรงแรมของเราในใจกลางเมืองสุราษฎร์ธานีเหมาะสำหรับทั้งธุรกิจหรือการพักผ่อน

@@ -50,7 +50,7 @@ export const ContactIcon = ({
             href={LINKBTN ?? LinkDefault}
             rel="noopener noreferrer"
           >
-           <p>{msg}</p>
+           <p className={`text-black  ${classtype}`}>{msg}</p>
           </Link>
           
           <Link

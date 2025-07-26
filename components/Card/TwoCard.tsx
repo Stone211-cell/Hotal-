@@ -321,7 +321,7 @@ export const TwoCardPriceSeaRoom = ({title,price}:priceroomlist) => {
           <CarouselSeaviewroom />
         </div>
           {/* Text Content */}
-          <div className="flex flex-col justify-start items-start mr-25 p-2 w-full bg-white rounded-xl p-6
+          <div className="flex flex-col justify-start items-start mr-25  w-full bg-white rounded-xl p-6
                      shadow-[ -8px_8px_20px_rgba(0,0,0,0.15), -15px_15px_30px_rgba(0,0,0,0.1)]
                      border border-gray-300 max-w-md">
             <h2 className="text-xl font-semibold mb-3 text-start">
