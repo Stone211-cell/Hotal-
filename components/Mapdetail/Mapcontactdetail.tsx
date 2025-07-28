@@ -28,22 +28,11 @@ const Mapcontactdetail = () => {
         <div className="relative  bg-black/60  z-10 shadow-[0_0_30px_5px_rgba(255,0,0,0.8),0_0_60px_10px_rgba(255,0,0,0.6) p-8 min-h-[500px] flex flex-col justify-center text-white text-center rounded-xl">
           <div className="flex justify-center">
             <h2 className="text-2xl font-bold bg-white text-black px-4 py-1 rounded-md transition-transform duration-200 ease-in-out hover:scale-110">
-              <Link href="#map">ติดต่อเรา</Link>
+              <Link href="#map">Contact</Link>
             </h2>
           </div>
 
-          <div className="my-5">
-            <h3 className="text-5xl font-bold py-5">
-              โรงแรมย่านสุราษฎร์ธานี Sunsea View
-              Residence Kohtao
-            </h3>
-            <p className="mt-2 text-sm">
-              โรงแรมของเราในย่านสุราษฎร์ธานี
-              เราพร้อมให้บริการสิ่งอำนวยความสะดวกครบครัน
-              เพื่อให้คุณพักผ่อนได้อย่างสะดวกสบาย ตลอดการเข้าพักที่ Sunsea View
-              Residence Kohtao
-            </p>
-          </div>
+ 
 
           <div className="flex justify-center">
             <h2 className="text-md font-bold mt-5 bg-red-800 rounded-2xl px-4 py-2 transition-transform duration-200 ease-in-out hover:scale-110">
@@ -51,7 +40,7 @@ const Mapcontactdetail = () => {
                 href="https://maps.app.goo.gl/HHCnyNu87xprH9Dr7?g_st=ic"
                 className="text-white"
               >
-                เปิดแผนที่นำทาง
+                Open Map
               </Link>
             </h2>
           </div>
@@ -62,11 +51,11 @@ const Mapcontactdetail = () => {
           >
             <ContactIcon
               sizeicon="2x"
-              coloricon="red"
+              coloricon="yellow"
               msg="ที่ตั้ง"
               LINKBTN="https://maps.app.goo.gl/HHCnyNu87xprH9Dr7?g_st=ic"
               icontype={faLocationDot}
-              classtype=""
+              classtype="text-white"
             />
             <p className="max-w-md mt-2">
               21 อำเภอเกาะพะงัน สุราษฎร์ธานี 84360 ประเทศไทย 4R4F+WH ตำบล เกาะเต่า อำเภอเกาะพะงัน สุราษฎร์ธานี
@@ -77,30 +66,30 @@ const Mapcontactdetail = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-4xl w-full px-4">
               <ContactIcon
                 sizeicon="2x"
-                coloricon="red"
+                coloricon="yellow"
                 msg="โทรสอบถาม"
                 description="097-295-5416"
                 LINKBTN="tel:0972955416"
                 icontype={faPhone}
-                classtype=""
+                classtype="text-white"
               />
               <ContactIcon
                 sizeicon="2x"
-                coloricon="red"
+                coloricon="yellow"
                 msg="โทรสอบถาม"
-                description="093-578-9499"
-                LINKBTN="tel:093-578-9499"
+                description="097-295-5416"
+                LINKBTN="tel:0972955416"
                 icontype={faPhone}
-                classtype=""
+                classtype="text-white"
               />
               <ContactIcon
                 sizeicon="2x"
-                coloricon="red"
+                coloricon="yellow"
                 msg="LINE ID"
                 description="097-295-5416"
                 LINKBTN="tel:0972955416"
                 icontype={faLine}
-                classtype=""
+                classtype="text-white"
               />
             </div>
           </div>

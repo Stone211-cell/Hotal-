@@ -17,7 +17,14 @@ const ShowCard = () => {
         <div className="text-start">
           <h2 className="text-2xl font-semibold mb-2 text-red-800">Standardroom</h2>
           <p className="text-gray-700"> </p>
- 
+           <div className="flex justify-end">
+         <Link
+  href="tel:0972955416"
+  className="bg-red-800 text-white rounded-2xl mt-2 p-2 px-3 shadow-md transition-transform duration-200 ease-in-out hover:scale-110"
+>
+  Book!!
+</Link>
+    </div>
         </div>
       </div>
 
@@ -31,7 +38,7 @@ const ShowCard = () => {
           <p className="text-gray-700"> </p>
           <div className="flex justify-end">
          <Link
-  href="#"
+  href="tel:0972955416"
   className="bg-red-800 text-white rounded-2xl mt-2 p-2 px-3 shadow-md transition-transform duration-200 ease-in-out hover:scale-110"
 >
   Book!!

@@ -6,9 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import { ContactIcon } from "../Contacted/ContactIcon";
+import Image from "next/image";
 
-// import Image from "next/image";
-// import { faLine } from "@fortawesome/free-brands-svg-icons";
+import { faLine } from "@fortawesome/free-brands-svg-icons";
 
 const Footerbar = () => {
   return (
@@ -35,7 +35,7 @@ const Footerbar = () => {
         <div>
           <h2 className="mb-3 mx-5 text-white">แผนผังเว็บไซต์</h2>
 
-          <div className="flex flex-col gap-y-3 mx-8">
+          <div className="flex flex-col gap-y-3 pl-8">
             <span>
               <ContactIcon
                 sizeicon="lg"
@@ -87,16 +87,14 @@ const Footerbar = () => {
                 โรงแรมของเราในใจกลางเมืองสุราษฎร์ธานีเหมาะสำหรับทั้งธุรกิจหรือการพักผ่อน
               </p>
             </div>
-          </div>
-        </div>
 
-        {/* QRcode 
+              {/* QRcode  */}
         <div>
           <h2>QRcode</h2>
 
           <div className="flex flex-col gap-y-3 mt-3">
             <Image
-              src="/images/service/QRCODE.jpg"
+              src="/image/LineQRCode.webp"
               alt="hello"
               width={100}
               height={100}
@@ -104,13 +102,21 @@ const Footerbar = () => {
             <ContactIcon
               sizeicon="lg"
               msg="QR CODE LINE"
-              LINKBTN="tel:0644088510"
+              LINKBTN="tel:0972955416"
               icontype={faLine}
-              classtype=""
+              classtype="text-white"
             />
           </div>
+        </div>
+
+        
+          </div>
+
+           
+
+     
           
-        </div>   */}
+        </div>  
       </div>
     </footer>
   );

@@ -38,9 +38,9 @@ const Dropdown = () => {
             <MenubarItem
               key={item.label}
               asChild
-              className="hover:bg-red-800 focus:bg-red-800 text-black hover:text-white"
+              className=" focus:bg-red-500 text-black hover:bg-red-500 hover:text-white"
             >
-              <Link href={item.href}>{item.label}</Link>
+              <Link className="text-black  hover:text-white" href={item.href}>{item.label}</Link>
             </MenubarItem>
           ))}
           <MenubarSeparator className="bg-red-700" />

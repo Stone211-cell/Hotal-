@@ -48,8 +48,8 @@ const ContactedBox = ({ classtype, pops }: classtype) => {
               sizeicon="2x"
               coloricon="red"
               msg="โทรสอบถาม"
-              description="093-578-9499"
-              LINKBTN="tel:093-578-9499"
+              description="097-295-5416"
+              LINKBTN="tel:0972955416"
               icontype={faPhone}
               classtype={classtype}
             />

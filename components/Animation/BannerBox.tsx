@@ -34,13 +34,15 @@ export function BannerBox() {
 
           <div className="my-5">
             <h3 className="text-5xl font-bold py-5">
-              โรงแรมย่านสุราษฎร์ธานี Sunsea View Residence Kohtao
+              Sunsea view Residence kohtao
             </h3>
             <p className="mt-2 text-sm">
-              โรงแรมของเราในย่านสุราษฎร์ธานี
-              เราพร้อมให้บริการสิ่งอำนวยความสะดวกครบครัน
-              เพื่อให้คุณพักผ่อนได้อย่างสะดวกสบายตลอดการเข้าพักที่
-              Sunsea View Residence Kohtao
+              Sunsea view Residence kohtao There are various types of rooms. It
+              is a place to relax, not far from restaurants, coffee shops,
+              markets, and a 5-minute walk down to the beach. You can see the
+              viewpoint of Koh Nang Yuan, the sunset, and the beautiful sea from
+              the balcony in front of the room. It is quiet and suitable for
+              working online.
             </p>
           </div>
 
@@ -52,9 +54,11 @@ export function BannerBox() {
               className="text-white"
             >
               <h2 className="text-md font-bold mt-5 bg-red-800 rounded-2xl px-4 py-2 transition-transform duration-200 ease-in-out hover:scale-110 cursor-pointer hover:bg-red-700">
-                เปิดแผนที่นำทาง
+                Open Map
               </h2>
             </Link>
+
+            
           </div>
         </div>
       </div>

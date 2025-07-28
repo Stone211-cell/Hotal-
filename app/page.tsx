@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div>
       {/* banner แรกที่คนเห็น */}
-      <section>
+      <section id="home">
         <BannerBox />
       </section>
 
@@ -37,13 +37,13 @@ export default function Home() {
 
 {/* โปรโฒชั่น */}
       <section className="my-5" id="promotion">
-        <div className="flex justify-center flex-col items-center my-15 gap-6">
+        <div className="flex justify-center flex-col items-center my-15 gap-6 lg:flex-row">
           <div>
 
           <FloatingShadowCard
-            imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-            title="โปรโมชั่น มีจำนวนจำกัด "
-            description="จ่าย3 เดือนมีส่วนลด5%  Pay for 3 months with 5% discount"
+            imgSrc="/image/Roomprice/Standard/L301/S__19497161_0.jpg"
+            title="Promotion Now!"
+            description="Pay for 3 months with 5% discount"
             buttonText="Explore Now"
             />
             </div>
@@ -51,8 +51,8 @@ export default function Home() {
             <div>
 
           <FloatingShadowCard
-            imgSrc="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-            title="โปรโมชั่น มีจำนวนจำกัด"
+            imgSrc="/image/Roomprice/Seaview/L101/S__19497167_0.jpg"
+            title="Promotion Now!"
             description="Pay for 6 months and get 10% discount."
             buttonText="Explore Now"
             />
